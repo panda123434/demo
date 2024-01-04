@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <script src="js/echarts.js"></script>
+    <script src="js/echarts-wordcloud.min.js"></script>
+    <script src="js/echarts-liquidfill.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <div class="column">
+            <div class="piechart" id="pieChart"></div>
+            <div class="barchart" id="barChart"></div>
+        </div>
+        <div class="column middle">
+            <h1 class="centered-title">游戏信息可视化大屏</h1>
+            <div class="button-container">
+                <button id="bgImage1">背景1</button>
+                <button id="bgImage2">背景2</button>
+                <button id="bgImage3">背景3</button>
+            </div>
+            <div class="dynamicLinechart" id="dynamicLineChart"></div>
+            <div class="horizontal-layout">
+                <div class="wordCloudchart" id="wordCloudChart"></div>
+                <div class="liquidFillchart" id="liquidFillChart"></div>
+            </div>
+            
+        </div>
+        <div class="column">
+            <div class="stackedAreachart" id="stackedAreaChart"></div>
+            <div class="funnelchart" id="funnelChart"></div>
+        </div>
+    </div>
+    <script src="js/charts.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/tiaozhuan.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>渠道随时间的金额变化</title>
+    <script src="js/echarts.js"></script>
+</head>
+<body style="height: 100%; margin: 0">
+    <div id="chart" style="height: 90%"></div>
+    <button id="backButton" style="position: fixed; bottom: 10px; right: 10px;">返回</button>
+    <script src="js/main.js"></script>
+    <script>
+        // 获取返回按钮元素
+        var backButton = document.getElementById("backButton");
+
+        // 为返回按钮添加点击事件处理程序
+        backButton.addEventListener("click", function() {
+            // 在点击事件中执行返回操作，这里使用history.back()返回上一页
+            window.history.back();
+        });
+    </script>
+</body>
+</html>
